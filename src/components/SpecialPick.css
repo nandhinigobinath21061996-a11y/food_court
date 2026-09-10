@@ -1,0 +1,180 @@
+.special-section {
+    padding: 60px 30px;
+    background: #F8F5F0;
+}
+
+
+/* HEADING */
+
+.special-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.special-heading p {
+    margin: 0 0 8px;
+    color: #B7791F;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.special-heading h2 {
+    margin: 0 0 8px;
+    color: #24160F;
+    font-size: 34px;
+}
+
+.special-heading span {
+    color: #666;
+    font-size: 15px;
+}
+
+
+/* CARDS */
+
+.special-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+.special-card {
+    background: #171717;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.special-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+
+/* IMAGE */
+
+.special-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.special-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+.special-card:hover .special-image img {
+    transform: scale(1.05);
+}
+
+
+/* DETAILS */
+
+.special-details {
+    padding: 18px;
+    min-height: 150px;
+    box-sizing: border-box;
+}
+
+.special-details h3 {
+    margin: 0 0 10px;
+
+    color: #F5E9D3;
+    font-size: 20px;
+}
+
+.special-details p {
+    margin: 0;
+
+    color: #CFCFCF;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* BOTTOM */
+
+.special-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 20px;
+}
+
+.special-bottom span {
+    color: #D99A2B;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.special-bottom button {
+    border: none;
+    border-radius: 6px;
+
+    padding: 9px 20px;
+
+    background: #B4532A;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background 0.3s ease;
+}
+
+.special-bottom button:hover {
+    background: #963F20;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .special-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .special-section {
+        padding: 45px 15px;
+    }
+
+    .special-heading h2 {
+        font-size: 28px;
+    }
+
+    .special-container {
+        grid-template-columns: 1fr;
+    }
+
+    .special-image {
+        height: 220px;
+    }
+
+}

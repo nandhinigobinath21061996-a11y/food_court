@@ -1,0 +1,25 @@
+.about-us {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.about-us img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+    .about-us {
+        margin: 35px auto;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .about-us img {
+        border-radius: 8px;
+    }
+}

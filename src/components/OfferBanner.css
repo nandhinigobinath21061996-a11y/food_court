@@ -1,0 +1,13 @@
+.offer-banner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.offer-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}

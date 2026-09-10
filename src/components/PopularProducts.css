@@ -1,0 +1,171 @@
+.popular-section {
+    padding: 50px 30px;
+    background: #F8F5F0;
+}
+
+/* Heading */
+
+.popular-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.popular-heading p {
+    margin: 0 0 6px;
+    color: #B7791F;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.popular-heading h2 {
+    margin: 0 0 8px;
+    color: #24160F;
+    font-size: 32px;
+}
+
+.popular-heading span {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Cards */
+
+.popular-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.popular-card {
+    background: #171717;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.popular-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* Image */
+
+.popular-image {
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+}
+
+.popular-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+.popular-card:hover .popular-image img {
+    transform: scale(1.05);
+}
+
+/* Details */
+
+.popular-details {
+    position: relative;
+    padding: 15px;
+    min-height: 90px;
+    box-sizing: border-box;
+}
+
+.popular-price {
+    margin: 0 0 6px;
+
+    color: #D99A2B;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.popular-details h3 {
+    margin: 0;
+
+    max-width: 65%;
+
+    color: #F5E9D3;
+    font-size: 16px;
+}
+
+/* Add button */
+
+.popular-details button {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 7px 14px;
+
+    background: #B4532A;
+    color: white;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.popular-details button:hover {
+    background: #963F20;
+}
+
+/* Tablet */
+
+@media (max-width: 950px) {
+
+    .popular-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Small tablet */
+
+@media (max-width: 700px) {
+
+    .popular-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    .popular-section {
+        padding: 40px 15px;
+    }
+
+    .popular-heading h2 {
+        font-size: 28px;
+    }
+
+    .popular-container {
+        grid-template-columns: 1fr;
+    }
+
+    .popular-image {
+        height: 200px;
+    }
+}
