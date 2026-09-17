@@ -134,3 +134,94 @@
         font-size: 15px;
     }
 }
+
+/* =========================================================
+   RESPONSIVE - NAVBAR
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 15px 30px;
+    }
+
+    .navbar ul {
+        gap: 20px;
+    }
+
+    .navbar a,
+    .welcome {
+        font-size: 15px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 14px 18px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .navbar ul {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .navbar a,
+    .welcome {
+        font-size: 14px;
+    }
+
+    .logout-btn {
+        padding: 7px 12px;
+        font-size: 14px;
+    }
+
+    .cart-count {
+        min-width: 21px;
+        height: 21px;
+        font-size: 12px;
+    }
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 400px) {
+
+    .navbar {
+        padding: 12px 14px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar ul {
+        gap: 10px;
+    }
+
+    .navbar a,
+    .welcome {
+        font-size: 13px;
+    }
+
+    .logout-btn {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+}
